@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
+import s from './FriendItem.module.css';
 
 function FriendItem({ avatar, name, isOnline, id }) {
   return (
     <>
-      <li className="item" key={id}>
+      <li className={s.item} key={id}>
         <span
-          className="status"
+          className={s.status}
           style={{ backgroundColor: isOnline ? 'green' : 'red' }}
         ></span>
-        <img className="avatar" src={avatar} alt="User avatar" width="48" />
-        <p className="name">{name}</p>
+        <img src={avatar} alt="User avatar" width="48" />
+        <p className={s.name}>{name}</p>
       </li>
     </>
   );

@@ -2,6 +2,7 @@ import user from './data/user.json';
 import stats from './data/stats.json';
 import friends from './data/friends.json';
 import transactions from './data/transactions.json';
+import Container from './components/Container/Container';
 import FriendList from './components/FriendsList/FriendList';
 import Profile from './components/Profile/Profile';
 import Stats from './components/Statistics/Stats';
@@ -17,18 +18,21 @@ function App() {
   } = user;
   return (
     <>
-      <Profile
-        username={username}
-        tag={tag}
-        location={location}
-        avatar={avatar}
-        followers={followers}
-        views={views}
-        likes={likes}
-      />
-      <Stats title="Upload stats" stats={stats} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <Container>
+        <Profile
+          username={username}
+          tag={tag}
+          location={location}
+          avatar={avatar}
+          followers={followers}
+          views={views}
+          likes={likes}
+        />
+        <FriendList friends={friends} />
+        <Stats title="Upload stats" stats={stats} />
+
+        <TransactionHistory items={transactions} />
+      </Container>
     </>
   );
 }

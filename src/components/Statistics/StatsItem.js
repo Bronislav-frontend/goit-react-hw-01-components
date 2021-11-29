@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import s from './StatsItem.module.css';
 
 function StatsItem({ id, label, percentage }) {
   return (
     <>
-      <li key={id} className="item">
-        <span className="label">{label}</span>
-        <span className="percentage">{percentage}%</span>
+      <li key={id} className={s.item}>
+        <span>{label}</span>
+        <span>{percentage}%</span>
       </li>
     </>
   );

@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+  border-right: 1px solid black;
+  color: white;
+  background-color: rgb(190, 135, 222);
+}
+
+.item:first-child {
+  border-left: 1px solid black;
+}

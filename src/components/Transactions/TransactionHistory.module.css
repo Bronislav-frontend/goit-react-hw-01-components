@@ -1,0 +1,18 @@
+.transactionHistory {
+  padding-top: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.titles {
+  background-color: rgb(49, 189, 245);
+  color: white;
+}
+
+.th {
+  width: 200px;
+}
+
+.body {
+  background-color: rgb(228, 226, 226);
+}
