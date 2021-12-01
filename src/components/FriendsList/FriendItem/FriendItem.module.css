@@ -15,3 +15,11 @@
 .name {
   font-weight: bold;
 }
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}

@@ -3,13 +3,11 @@ import s from './TransactionItem.module.css';
 
 function TransactionItem({ id, type, amount, currency }) {
   return (
-    <>
       <tr key={id} className={s.tr}>
         <th>{type}</th>
         <th>{amount}</th>
         <th>{currency}</th>
       </tr>
-    </>
   );
 }
 
